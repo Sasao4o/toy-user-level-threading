@@ -206,5 +206,4 @@ whistles:
 
 If you do extra credit, write up a short report about what you did in
 `extra_credit.txt` and a small test case.
-# toy-user-level-threading
-# toy-user-level-threading
+
