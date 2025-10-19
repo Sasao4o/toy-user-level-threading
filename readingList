@@ -1,0 +1,5 @@
+The Stack of the user-level thread is on the heap?!!?!? isn't this degrade performance ! and we need massive gc?
+
+Why Remember that the stack pointer must be 16-byte aligned?
+
+
