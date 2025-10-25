@@ -126,11 +126,13 @@ static struct thread* thread_new(threadfn_t fn, void* arg) {
     
     sp -= 8;
     *(uint64_t*)sp = (uint64_t)thread_start;
-    
-    new_thread->ctx.rsp = (uint64_t)sp;
  
-    
+
     new_thread->ctx.rsp = (uint64_t)sp;
+    new_thread->ctx.mxcsr = 0x1F80;
+    new_thread->ctx.x87 = 0x037F;
+    new_thread->state = STATE_RUNNABLE;
+    
     return new_thread;
     
 
